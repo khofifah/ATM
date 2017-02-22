@@ -330,7 +330,7 @@ public class room extends javax.swing.JFrame {
         return saldo;
     }
         
-    }
+    }  
 
     private static class transfer {
     private int saldo;
