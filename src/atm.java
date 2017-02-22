@@ -33,7 +33,6 @@ public class atm extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
-        pin = new javax.swing.JTextField();
         B3 = new javax.swing.JButton();
         B1 = new javax.swing.JButton();
         B0 = new javax.swing.JButton();
@@ -44,6 +43,7 @@ public class atm extends javax.swing.JFrame {
         B9 = new javax.swing.JButton();
         B7 = new javax.swing.JButton();
         B8 = new javax.swing.JButton();
+        pin = new javax.swing.JPasswordField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(null);
@@ -62,12 +62,6 @@ public class atm extends javax.swing.JFrame {
         jLabel3.setText("ATM BANK");
         getContentPane().add(jLabel3);
         jLabel3.setBounds(150, 50, 140, 30);
-
-        pin.setEditable(false);
-        pin.setBackground(new java.awt.Color(204, 204, 255));
-        pin.setFont(new java.awt.Font("Tahoma", 0, 40)); // NOI18N
-        getContentPane().add(pin);
-        pin.setBounds(90, 150, 260, 90);
 
         B3.setFont(new java.awt.Font("Tahoma", 0, 20)); // NOI18N
         B3.setText("3");
@@ -169,7 +163,13 @@ public class atm extends javax.swing.JFrame {
         getContentPane().add(B8);
         B8.setBounds(180, 380, 80, 40);
 
-        pack();
+        pin.setEditable(false);
+        pin.setBackground(new java.awt.Color(102, 102, 255));
+        pin.setFont(new java.awt.Font("Tahoma", 0, 48)); // NOI18N
+        getContentPane().add(pin);
+        pin.setBounds(90, 150, 250, 90);
+
+        setBounds(0, 0, 458, 548);
     }// </editor-fold>//GEN-END:initComponents
 
     private void B1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_B1ActionPerformed
@@ -315,7 +315,7 @@ public class atm extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
-    private javax.swing.JTextField pin;
+    private javax.swing.JPasswordField pin;
     // End of variables declaration//GEN-END:variables
 
 }
